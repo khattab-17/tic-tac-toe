@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+	    <link rel="stylesheet" type="text/css" href="style.css">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title>tic-tac-toe</title>
+    </head>
+    <body>
+        <div id="main-div" class="mode1">
+            <div id="main">
+                <section id="main-body">
+
+                    <div id="Xwon" class="none alert">
+                        <h1>X Wins!</h1>
+                        <button id="ok">OK</button>
+                    </div>
+
+                    <div id="Owon" class="none alert">
+                        <h1>O Wins!</h1>
+                        <button class="ok">OK</button>
+                    </div>
+
+                    <div id="Owon-gold" class="none alert">
+                        <h1>O Wins!</h1>
+                        <button class="ok-1">OK</button>
+                    </div>
+
+                    <div id="Owon-white" class="none alert">
+                        <h1>O Wins!</h1>
+                        <button class="ok-2">OK</button>
+                    </div>
+
+                <center>
+                    <div id="top">
+                            <p class="box top" id="1"></p>
+                            <p class="box top" id="2"></p>
+                            <p class="box top" id="3"></p>
+                    </div>
+                    <div id="mid">
+                            <p class="box mid" id="4"></p>
+                            <p class="box mid" id="5"></p>
+                            <p class="box mid" id="6"></p>
+                    </div>
+                    <div id="bott">
+                            <p class="box bot" id="7"></p>
+                            <p class="box bot" id="8"></p>
+                            <p class="box bot" id="9"></p>
+                    </div>
+                
+                    <button id="reset">Reset</button>
+                </center>
+                </section>
+
+                <div id="setting-content" onmouseleave="menu.classList.remove('block')">
+
+                <img src="settings -white.png" alt="" id="settings" onmouseover="menu.classList.add('block')">
+
+                <div id="menu">
+                    <p id="modes">Themes</p><k><hr></k>
+                    <ul id="ul">
+                        <li class="li">Mode 1 <input type="radio" id="mode1"name="mode" value="mode1" checked></li>
+                        <li class="li">Mode 2 <input type="radio" id="mode2"name="mode" value="mode2"></li>
+                        <li class="li bot">Mode 3 <input type="radio" id="mode3"name="mode" value="mode3"></li>
+                    </ul>
+                </div></div>
+
+                <!-- <div id="boxx">X</div> -->
+            </div>
+        </div>
+        <script src="k.js"></script>
+        <script src="xo.js"></script>
+    </body>
+</html>

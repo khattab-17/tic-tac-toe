@@ -1,0 +1,487 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+
+/*
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 900
+
+*/
+
+#font{
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  color: white;
+}
+
+#main-div{
+    background-image: url(pngtree-blue-carbon-background-with-sport-style-and-golden-light-image_371487.jpg);   
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.mode2{
+    background-image: url(pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg) !important;
+    background-position: center;
+    background-size: cover;
+}
+
+.mode3{
+    background-image: url(pngtree-dark-vector-abstract-background-image_302715.jpg) !important;
+    background-position: center;
+    background-size: cover;
+}
+
+#boxx{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+
+#top,#mid,#bott{
+    display: flex;
+}
+
+#reset{
+    margin-top: 25px;
+    padding: 8px 18px;
+    border: 1px solid gold;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    font-size: 16px;
+    color: gold;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.644);
+    font-family:monospace;
+}
+
+#reset:hover{
+    border: 1px solid aqua;
+    color: aqua;
+}
+
+/*#main-body{
+    padding: 10px;
+    margin-top: 100px;
+}*/
+
+.box{
+    padding: 10px;
+    margin:6px;
+    background-color: rgb(72, 67, 92);
+    border-radius: 3px;
+    width: 80px !important;
+    height: 80px !important;
+    box-sizing: border-box;
+    font-size: 30px;
+    cursor: pointer;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.644);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+#main-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding-right: -20px;
+    padding-top: 200px; */
+    /* background-color: red; */
+    /* width: 300px; */
+}
+
+toper, top, bot, mid, boter{
+    padding: 23px 0px;
+}
+
+.blue{
+    color: aqua;
+    cursor: pointer;
+}
+
+.gold{
+    color: gold;
+    cursor: pointer;
+}
+
+.red{
+    color:rgb(241, 73, 205);
+    cursor: pointer;
+}
+
+.white{
+    color: white;
+    cursor: pointer;
+}
+
+#settings{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    padding: 10px 10px 20px 20px;
+    box-sizing: content-box;
+    width: 25px;
+}
+
+/* #settings:hover{
+
+} */
+
+
+#menu{
+    position: absolute;
+    right: 40px;
+    top: 70px;
+    background-color: rgb(72, 67, 92);
+    width: 170px;
+    color: white;
+    display: none;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.644);
+    border-radius: 5px;
+}
+
+#ul{
+    background-color: rgb(72, 67, 92);
+    cursor: pointer;
+    width: 170px;
+    border-radius: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.li{
+    width: 170px;
+    list-style: none;
+    padding: 15px 0px 15px 0px;    
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+li:hover{
+    background-color: rgb(88, 86, 97);
+}
+
+#modes{
+    width: 150px;
+    list-style: none;
+    padding: 15px 0px 15px 40px;
+    background-color: rgb(72, 67, 92);
+    margin-left: 7px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+hr{
+    width: 150px;
+    margin-left: 8px;
+}
+
+input{
+    background-color: red;
+}
+
+.block{
+    display: block !important;
+}
+
+.none{
+    display: none !important;
+}
+
+#Xwon{
+    position: absolute;
+    width: 40vw;
+    height: 140px;
+    /* background-color: midnightblue; */
+    background-color: rgb(72, 67, 92);
+    border-radius: 1rem;
+    border: 2px solid aqua;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+    box-shadow: 0px 3px 3px rgb(19, 19, 19);
+}
+
+#Xwon h1{
+    font-family:monospace !important;
+    color: aqua;
+    font-size: 25px;
+}
+#Xwon button{
+    padding: 5px 20px;
+    background-color: rgb(72, 67, 92);
+    border: 2px solid aqua;
+    border-radius: 1rem;
+    outline: none;
+    margin-top: 10px;
+    color: aqua;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 13px;
+}
+
+#Xwon button:hover{
+    background-color: aqua;
+    border: 2px solid aqua;
+    color:rgb(72, 67, 92);
+}
+
+
+#Owon{
+    position: absolute;
+    width: 40vw;
+    height: 140px;
+    /* background-color: midnightblue; */
+    background-color: rgb(72, 67, 92);
+    border-radius: 1rem;
+    border: 2px solid rgb(241, 73, 205);
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+    box-shadow: 0px 3px 3px rgb(19, 19, 19);
+}
+
+
+#Owon h1{
+    font-family:monospace !important;
+    color: rgb(241, 73, 205);
+    font-size: 25px;
+}
+
+#Owon button{
+    padding: 5px 20px;
+    background-color: rgb(72, 67, 92);
+    border: 2px solid rgb(241, 73, 205);
+    border-radius: 1rem;
+    outline: none;
+    margin-top: 10px;
+    color: rgb(241, 73, 205);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 13px;
+}
+
+#Owon button:hover{
+    background-color:rgb(241, 73, 205);
+    border: 2px solid rgb(241, 73, 205);
+    color:rgb(72, 67, 92);
+}
+
+/* ------------------------------------------------------ */
+
+
+#Owon-white{
+    position: absolute;
+    width: 40vw;
+    height: 140px;
+    /* background-color: midnightblue; */
+    background-color: rgb(72, 67, 92);
+    border-radius: 1rem;
+    border: 2px solid white;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+    box-shadow: 0px 3px 3px rgb(19, 19, 19);
+}
+
+
+#Owon-white h1{
+    font-family:monospace !important;
+    color: white;
+    font-size: 25px;
+}
+
+#Owon-white button{
+    padding: 5px 20px;
+    background-color: rgb(72, 67, 92);
+    border: 2px solid white;
+    border-radius: 1rem;
+    outline: none;
+    margin-top: 10px;
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 13px;
+}
+
+#Owon-white button:hover{
+    background-color: white;
+    border: 2px solid white;
+    color:rgb(72, 67, 92);
+}
+/* ------------------------------------------------------ */
+
+
+#Owon-gold{
+    position: absolute;
+    width: 40vw;
+    height: 140px;
+    /* background-color: midnightblue; */
+    background-color: rgb(72, 67, 92);
+    border-radius: 1rem;
+    border: 2px solid gold;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+    box-shadow: 0px 3px 3px rgb(19, 19, 19);
+}
+
+
+#Owon-gold h1{
+    font-family:monospace !important;
+    color: gold;
+    font-size: 25px;
+}
+
+#Owon-gold button{
+    padding: 5px 20px;
+    background-color: rgb(72, 67, 92);
+    border: 2px solid gold;
+    border-radius: 1rem;
+    outline: none;
+    margin-top: 10px;
+    color: gold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+#Owon-gold button:hover{
+    background-color: gold;
+    border: 2px solid gold;
+    color:rgb(72, 67, 92);
+}
+/* ------------------------------------------------------ */
+
+.crimsoning{
+    border: 1px solid aqua !important;
+    color: aqua !important;
+}
+
+.crimsoning:hover{
+    border: 1px solid rgb(241, 73, 205) !important;
+    color: rgb(241, 73, 205) !important;
+}
+
+/* rgb(49, 49, 236)  */
+
+.whiten{
+    border: 1px solid white !important;
+    color: white !important;
+}
+
+.whiten:hover{
+    border: 1px solid aqua !important;
+    color: aqua !important;
+}
+
+@media screen and (max-width:1000px){
+    .alert{
+        width: 400px !important;
+    }
+
+    .alert h1{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:800px){
+
+    /* .alert{
+        width: 80% !important;
+    } */
+
+    #settings{
+        right: 4px;
+        top: 5px;
+        /* width: 30px; */
+    }
+
+    #menu{
+        right: 10px;
+        top: 45px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .alert{
+        width: 80% !important;
+    }
+}
+
+@media screen and (max-width:400px){
+
+.box{
+    width: 20vw !important;
+    height: 20vw !important;
+    /* margin: 0px; */
+}
+
+    #settings{
+        width: 8vw;
+        right: 1px;
+        width: 25px;
+    }
+
+    #reset{
+        width: 23vw;
+        height: 9vw;
+        align-items: center;
+        justify-content: center;
+        /* background-color: red; */
+        /* font-size: 5vw; */
+        padding: 0%;
+    }
+}
+
+@media screen and (max-width:320px){
+    #reset{
+        width: 25vw;
+        height: 10vw;
+        font-size: 5vw;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+    #settings{
+        width: 8vw;
+    }
+    }
+
+/* @media screen and (max-width:350px){
+
+
+    }
+
+    @media screen and (max-width:350px){
+
+
+    } */
